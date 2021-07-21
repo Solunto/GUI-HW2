@@ -1,8 +1,11 @@
 /*
 	Intro. to GUI 1 HW2
+	Date: 7/20/2021
 	By: Ari Primak
 	Description: This assignment asked to replicate the styling shown in the images included
 	with the download without changing index.html.
+	Comments: I couldn't get the font size to look the same and wrap the same way as in the examples, 
+	but I did my best to match it as closely as possible.
 */
 header, hgroup, nav, footer, figure, figcaption, aside, section, article {
 	display: block;
@@ -17,7 +20,7 @@ header, hgroup, nav, footer, figure, figcaption, aside, section, article {
 */
 body {
 	min-width: 600px;
-	max-width:1300px;
+	max-width:1385px;
 	width:80%;
 	background-color:#00569f;
 	background-image:url("ptrbackground.jpg");
@@ -33,6 +36,9 @@ body {
 	so I did my best to match the included images by pasting them into a collage (thanks Paint3D!) and
 	using the zoom tool in Windows Photos to try to match the titlebar size so I could set the height
 	accurately.
+	EDIT: I tinkered with the sizes after writing the above comment, so I'm no longer sure they are 
+	optimally close. But I am confident they are reasonably close.
+
 	I used skyblue for the nav color because I figured the color used in the original would be one
 	of the standardized colors, and it looks quite close. I'm not sure if it's exactly the same,
 	but I don't feel it's necessary to use a color picker to extract the exact RGB values.
@@ -40,7 +46,7 @@ body {
 nav {
 	width:190px;
 	float:left;
-	height:720px;
+	height:755px;
 	background-color:skyblue;
 }
 nav ul {
@@ -50,8 +56,8 @@ nav ul {
 	padding-left:20px;
 }
 
-nav a {
-	color: #344873;
+nav a:link {
+	color: #000033;
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -83,42 +89,35 @@ h1,
 h2 {
 	font-family: Georgia, "Times New Roman", serif;
 }
-#contact {
-	font-size: 90%;
-}
 
 dt {
 	color: #000033;
 }
 
-footer {
-	font-family: Georgia, "Times New Roman", serif;
-	margin-left:213px;
-	padding-bottom:20px;
-	font-size:small;
-	font-style: italic;
-}
 
 #wrapper {
 	background-color:white;
+	height:811px;
 }
-
 
 img {
 	float:left;
-	padding-right:20px;
+	padding-right:15px;
 }
 
 /*
 	The bottoms of the nav bar and the #wrapper div don't quite match up, but it's very close
 	and to fix it I would need to tinker with it beyond integer px values which I am disinclined
 	to do.
+	EDIT: I think I got them to line up closely after previewing in Chrome instead of Edge? Unsure
+	how it will look for other people's browsers, though...
 */
 #content {
 	margin-left:220px;
 	margin-bottom:30px;
-	height:620px;
+	height:647px;
 	width:auto;
+	font-size:1.05em;
 }
 
 #content ul {
@@ -132,6 +131,17 @@ img {
 	font-weight: bold;
 }
 
+#contact {
+	font-size:.86em;
+}
+
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	margin-left:213px;
+	padding-bottom:20px;
+	font-style: italic;
+	font-size:.83em;
+}
 
 /*
 	As you might expect, I simply modified the heights of these 3 elements by the same proportion
@@ -143,41 +153,42 @@ img {
 */
 @media screen and (min-width:768px) {
 	nav {
-		height:700px;
+		height:704px;
 	}
 
 	#content {
 		height:600px;
 	}
 	#wrapper {
-		height:756px;
+		height:760px;
 	}
 }
 
-@media screen and (min-width:940px) {
+@media screen and (min-width:860px) {
 	nav {
-		height:580px;
+		height:599px;
 	}
 
 	#content {
-		height:480px;
+		height:500px;
 	}
 
 	#wrapper {
-		height:636px;
+		height:655px;
 	}
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1150px) {
 	nav {
-		height:440px;
+		height:414px;
 	}
 
 	#content {
-		height:340px;
+		height:320px;
 	}
 
 	#wrapper {
-		height:496px;
+		height:470px;
 	}
+
 }
