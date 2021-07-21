@@ -170,14 +170,14 @@ img {
 
 @media screen and (min-width:1200px) {
 	nav {
-		height:450px;
+		height:440px;
 	}
 
 	#content {
-		height:350px;
+		height:340px;
 	}
 
 	#wrapper {
-		height:506px;
+		height:496px;
 	}
 }
