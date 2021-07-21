@@ -1,0 +1,183 @@
+/*
+	Intro. to GUI 1 HW2
+	By: Ari Primak
+	Description: This assignment asked to replicate the styling shown in the images included
+	with the download without changing index.html.
+*/
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+/*
+	The repeat-x line tripped me up for a bit because I had forgotten I had set the background-color
+	to white at the end of body's styling and was confused why it wouldnt stay #00569f when I set it
+	to that at the start. Because the y-axis repeating of the gradient also made the bottom white,
+	I misunderstood my issue! I set the max width to a size that would ensure the text in the <p>
+	block doesn't end up as a single orphaned line. It still trails a bit, but it's not too bad.
+*/
+body {
+	min-width: 600px;
+	max-width:1300px;
+	width:80%;
+	background-color:#00569f;
+	background-image:url("ptrbackground.jpg");
+	background-repeat:repeat-x;
+	background-position:top;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*
+	The px amounts throughout are the result of trial-and-error. I'm a tad neurotic about presentation,
+	so I did my best to match the included images by pasting them into a collage (thanks Paint3D!) and
+	using the zoom tool in Windows Photos to try to match the titlebar size so I could set the height
+	accurately.
+	I used skyblue for the nav color because I figured the color used in the original would be one
+	of the standardized colors, and it looks quite close. I'm not sure if it's exactly the same,
+	but I don't feel it's necessary to use a color picker to extract the exact RGB values.
+*/
+nav {
+	width:190px;
+	float:left;
+	height:685px;
+	background-color:skyblue;
+}
+nav ul {
+	font-size: 1.2em;
+	list-style: none;
+	float:left;
+	padding-left:20px;
+}
+
+nav a {
+	color: #344873;
+	text-decoration: none;
+	font-weight: bold;
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+
+/*
+	Not much to say about h1's styling. It's straightforward enough as is.
+*/
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+	color:white;
+	background-color:#000033;
+	background-image:url("sunset.jpg");
+	background-position: right;
+	background-repeat:no-repeat;
+}
+
+h2 {
+	color: #3399CC;
+}
+
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+#contact {
+	font-size: 90%;
+}
+
+dt {
+	color: #000033;
+}
+
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	margin-left:213px;
+	padding-bottom:20px;
+	font-size:small;
+	font-style: italic;
+}
+
+#wrapper {
+	background-color:white;
+}
+
+
+img {
+	float:left;
+	padding-right:20px;
+}
+
+/*
+	The bottoms of the nav bar and the #wrapper div don't quite match up, but it's very close
+	and to fix it I would need to tinker with it beyond integer px values which I am disinclined
+	to do.
+*/
+#content {
+	margin-left:220px;
+	margin-bottom:30px;
+	height:585px;
+	width:auto;
+}
+
+#content ul {
+	padding-left: 40px;
+	list-style-image: url("marker.gif");
+	list-style-position: inside;
+}
+
+.resort {
+	color:steelblue;
+	font-weight: bold;
+}
+
+
+/*
+	As you might expect, I simply modified the heights of these 3 elements by the same proportion
+	relative to their heights in the smallest-width viewport. Again, trial-and-error was used, and
+	I think I got really close to the images!
+
+	I chose the widths for the media queries based on when the height changes would start to not 
+	suffocate the footer.
+*/
+@media screen and (min-width:768px) {
+	nav {
+		height:660px;
+	}
+
+	#content {
+		height:560px;
+	}
+	#wrapper {
+		height:716px;
+	}
+}
+
+@media screen and (min-width:940px) {
+	nav {
+		height:535px;
+	}
+
+	#content {
+		height:435px;
+	}
+
+	#wrapper {
+		height:591px;
+	}
+}
+
+@media screen and (min-width:1200px) {
+	nav {
+		height:400px;
+	}
+
+	#content {
+		height:300px;
+	}
+
+	#wrapper {
+		height:456px;
+	}
+}
