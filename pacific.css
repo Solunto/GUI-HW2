@@ -40,7 +40,7 @@ body {
 nav {
 	width:190px;
 	float:left;
-	height:685px;
+	height:720px;
 	background-color:skyblue;
 }
 nav ul {
@@ -117,7 +117,7 @@ img {
 #content {
 	margin-left:220px;
 	margin-bottom:30px;
-	height:585px;
+	height:620px;
 	width:auto;
 }
 
@@ -143,41 +143,41 @@ img {
 */
 @media screen and (min-width:768px) {
 	nav {
-		height:660px;
+		height:700px;
 	}
 
 	#content {
-		height:560px;
+		height:600px;
 	}
 	#wrapper {
-		height:716px;
+		height:756px;
 	}
 }
 
 @media screen and (min-width:940px) {
 	nav {
-		height:535px;
+		height:580px;
 	}
 
 	#content {
-		height:435px;
+		height:480px;
 	}
 
 	#wrapper {
-		height:591px;
+		height:636px;
 	}
 }
 
 @media screen and (min-width:1200px) {
 	nav {
-		height:400px;
+		height:450px;
 	}
 
 	#content {
-		height:300px;
+		height:350px;
 	}
 
 	#wrapper {
-		height:456px;
+		height:506px;
 	}
 }
