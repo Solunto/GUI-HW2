@@ -46,7 +46,7 @@ body {
 nav {
 	width:190px;
 	float:left;
-	height:749px;
+	height:755px;
 	background-color:skyblue;
 }
 nav ul {
@@ -153,7 +153,7 @@ footer {
 */
 @media screen and (min-width:768px) {
 	nav {
-		height:699px;
+		height:704px;
 	}
 
 	#content {
@@ -166,7 +166,7 @@ footer {
 
 @media screen and (min-width:860px) {
 	nav {
-		height:593px;
+		height:599px;
 	}
 
 	#content {
@@ -180,7 +180,7 @@ footer {
 
 @media screen and (min-width:1150px) {
 	nav {
-		height:408px;
+		height:414px;
 	}
 
 	#content {
